@@ -1,13 +1,194 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main_div{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(152, 190, 216);
+}
+
+.card_div{
+  width:30vw;
+  height: 75vh;
+  background-color: white;
+  box-shadow: 0 0 50px rgb(94, 103, 105);
+  border-radius: 50px;
+}
+/* .br1{
+  height: 4px;
+  border: 2px solid rgb(152, 190, 216);
+  background-color: rgb(0, 0, 0);
+} */
+
+.heading{
+  margin: 10% 0%;
+  height: 13%;
+  text-align: center;
+  background-color: rgb(203, 152, 216);
+  font-size: 1.5em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 50% 50% 0 0;
+}
+
+.inputField{
+  margin-left: 5%;
+  margin-right: 4%;
+  width: 75%;
+  border: none;
+  border-bottom: 3px solid rgb(203, 152, 216);
+  outline: none;
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: 'Merriweather', serif;
+}
+
+.addbtn{
+  width: 11%;
+  height: 8%;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  background-color:rgb(203, 152, 216);
+  color: white;
+  /* border: 2px solid rgb(166, 121, 177); */
+  outline: none;
+}
+.addbtn:hover{
+  background-color: green;
+  /* border: rgb(22, 29, 11); */
+}
+.MyList{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.olList{
+  height: 50%;
+  overflow: scroll;
+}
+
+ol{
+  margin-top: 10%;
+}
+.list{
+  display: inline;
+  justify-content: center;
+  align-items: center;
+}
+.crossbtn{
+  float: left;
+  margin-left: 10%;
+  margin-top: 5px;
+  margin-right: 5%;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  outline: none;
+  background-color: rgb(203, 152, 216);
+}
+.crossbtn:hover{
+  background-color: rgb(240, 99, 99);
+}
+li{
+  list-style: none;
+  font-size: 1.9rem;
+}
+
+@media only screen and (max-width:2560px){
+  .heading{
+    margin-top: 10%;
+    font-size: 2.3rem;
+  }
+  .card_div{
+    height: 70vh;
+    width: 50vh;
+  }
+  .inputField{
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width:1440px){
+  .heading{
+    margin-top: 10%;
+  }
+  .card_div{
+    height: 70vh;
+    width: 50vh;
+  }
+}
+
+@media only screen and (max-width:1024px){
+  .heading{
+    margin-top: 15%;
+  }
+  .card_div{
+    height: 70vh;
+    width: 50vh;
+  }
+}
+@media only screen and (max-width:768px){
+  .heading{
+    margin-top: 15%;
+    font-size: 1.1rem;
+  }
+  .card_div{
+    height: 70vh;
+    width: 50vh;
+  }
+}
+@media only screen and (max-width:660px){
+  .heading{
+    height: 10%;
+    margin-top: 15%;
+    font-size: 1.1rem;
+  }
+  .card_div{
+    height: 60vh;
+    width: 40vh;
+  }
+}
+@media only screen and (max-width:500px){
+  .heading{
+    height: 10%;
+    margin-top: 15%;
+    font-size: 1.1rem;
+  }
+  .card_div{
+    height: 60vh;
+    width: 70vw;
+  }
+}
+@media only screen and (max-width:376px){
+  .heading{
+    height: 10%;
+    margin-top: 16%;
+    font-size: 1.1rem;
+  }
+  .card_div{
+    height: 60vh;
+    width: 80vw;
+  }
+}
+@media only screen and (max-width:321px){
+  .heading{
+    height: 10%;
+    margin-top: 16%;
+    font-size: 1.1rem;
+  }
+  .card_div{
+    height: 70vh;
+    width: 95vw;
+  }
 }
